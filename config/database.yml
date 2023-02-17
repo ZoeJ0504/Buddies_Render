@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: Buddies_Session_Test_project_production
-  username: Buddies_Session_Test_project
-  password: <%= ENV["BUDDIES_SESSION_TEST_PROJECT_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
